@@ -1483,8 +1483,13 @@ input:checked + .slider-toggle:before {
 
 /* intro-cards  */
 @media (max-width: 768px) {
+<<<<<<< HEAD
   .container {
     padding: 0 25px;
+=======
+  .container{
+    padding: 0 40px;
+>>>>>>> ab6b1ce0308fe39e55c573d2dce97bcc08d3ddec
   }
   .guides-grid {
     margin-left: -25px;
