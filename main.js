@@ -196,7 +196,8 @@ function getNavbarMarkup() {
   <nav class="navbar" id="navbar">
   <div class="container" id="navbarContainer">
   <div class="nav-container">
-        <a href="${logoLink}" class="nav-logo">
+        <a href="${logoLink}" 
+        lass="nav-logo">
           <span class="logo-icon">
             <img class="im-logo" src="${prefix}gallary/remove.photos-removed-background.png" alt="" />
           </span>
@@ -877,7 +878,7 @@ function getFooterMarkup() {
         </a>
         </li>
       <li>
-        <a href="https://www.instagram.com/accounts/login/?next=%2F__rent_a_local_friend_luxor&source=omni_redirect" aria-label="Instagram" target="_blank">
+        <a href="https://www.instagram.com/__rent_a_local_friend_luxor?igsh=aWhlNDJvOXQ4cWg1" aria-label="Instagram" target="_blank">
         <i class="fab fa-instagram"></i> Instagram
         </a>
         </li>
@@ -1406,7 +1407,7 @@ function getSocialIconsMarkup() {
     facebook: "https://www.facebook.com/share/1CoRKkcnm3/",
     whatsapp: "https://wa.me/201096406581",
     instagram:
-      "https://www.instagram.com/accounts/login/?next=%2F__rent_a_local_friend_luxor&source=omni_redirect",
+      "https://www.instagram.com/__rent_a_local_friend_luxor?igsh=aWhlNDJvOXQ4cWg1",
   };
   const NAMES = {
     facebook: "Facebook",
