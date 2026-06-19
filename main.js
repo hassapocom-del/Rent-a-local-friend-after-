@@ -89,8 +89,8 @@ function getNavbarMarkup() {
   const isProfilePage =
     window.location.pathname.includes("profile.html") ||
     window.location.href.includes("index.html");
-  const isPoliciesPage =
-    window.location.pathname.includes("Policies.html") ||
+  const ispoliciesPage =
+    window.location.pathname.includes("policies.html") ||
     window.location.pathname.includes("policies.html");
 
   let prefix = "";
@@ -101,7 +101,7 @@ function getNavbarMarkup() {
   let whyUsLink = "#why-us";
   let contactLink = "contact.html";
   let filterLink = "#filter";
-  let policiesLink = "./pages/Policies.html";
+  let policiesLink = "./pages/policies.html";
   let logoLink = "#";
   let file = "pages/";
 
@@ -112,7 +112,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isBookingPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -123,7 +123,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isServicesPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -134,7 +134,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isStatsPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -145,7 +145,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isContactPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -156,7 +156,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isCompanionsPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -167,7 +167,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isProfilePage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -178,8 +178,8 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
-  } else if (isPoliciesPage) {
+    policiesLink = `${prefix}${file}policies.html`;
+  } else if (ispoliciesPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
     logoLink = `${prefix}index.html`;
@@ -189,7 +189,7 @@ function getNavbarMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   }
 
   return `
@@ -209,7 +209,7 @@ function getNavbarMarkup() {
           <li><a href="${companionsLink}">Companions</a></li>
           <li><a href="${whyUsLink}">Why Us</a></li>
           <li><a href="${contactLink}">contact</a></li>
-          <li><a href="${policiesLink}">Policies</a></li>
+          <li><a href="${policiesLink}">policies</a></li>
           </ul>
           <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -740,8 +740,8 @@ function getFooterMarkup() {
   const isProfilePage =
     window.location.pathname.includes("profile.html") ||
     window.location.href.includes("index.html");
-  const isPoliciesPage =
-    window.location.pathname.includes("Policies.html") ||
+  const ispoliciesPage =
+    window.location.pathname.includes("policies.html") ||
     window.location.pathname.includes("policies.html");
 
   let prefix = "";
@@ -752,7 +752,7 @@ function getFooterMarkup() {
   let whyUsLink = "#why-us";
   let contactLink = "contact.html";
   let filterLink = "#filter";
-  let policiesLink = "./pages/Policies.html";
+  let policiesLink = "./pages/policies.html";
   let profileLink = "#profile";
   let logoLink = "#";
   let file = "pages/";
@@ -764,7 +764,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isBookingPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -775,7 +775,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isServicesPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -786,7 +786,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isStatsPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -797,7 +797,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isContactPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -808,7 +808,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isCompanionsPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -819,7 +819,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   } else if (isProfilePage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
@@ -830,8 +830,8 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
-  } else if (isPoliciesPage) {
+    policiesLink = `${prefix}${file}policies.html`;
+  } else if (ispoliciesPage) {
     prefix = "../";
     whyUsLink = `${prefix}index.html#why-us`;
     logoLink = `${prefix}index.html`;
@@ -841,7 +841,7 @@ function getFooterMarkup() {
     companionsLink = `${prefix}${file}companions.html`;
     contactLink = `${prefix}${file}contact.html`;
     filterLink = `${prefix}${file}companions.html#filter`;
-    policiesLink = `${prefix}${file}Policies.html`;
+    policiesLink = `${prefix}${file}policies.html`;
   }
 
   return `
@@ -857,13 +857,13 @@ function getFooterMarkup() {
         <li><a href="${servicesLink} ">Services</a></li>
         <li><a href="${statsLink}">Statistics</a></li>
         <li><a href="${companionsLink}">Companions</a></li>
-        <li><a href="${policiesLink}">Policies</a></li>
+        <li><a href="${policiesLink}">policies</a></li>
       </ul>
     </div>
     <div class="links">
           <h2>policies</h2>
           <ul>
-            <li><a href="${policiesLink}">Policies</a></li>
+            <li><a href="${policiesLink}">policies</a></li>
             <li><a href="${whyUsLink}">Why Us</a></li>
             <li><a href="${contactLink}">contact</a></li>
           </ul>
