@@ -24,7 +24,6 @@
   --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
   --font-body: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
 }
-
 /* حذف أو تعليق تنسيقات السلايدر القديمة (.slider, .prev, .next, .dots-container ...) */
 
 .hero-banner {
@@ -253,7 +252,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 210px;
+  padding: 0 150px;
 }
 
 /* ===== NAVIGATION ===== */
@@ -1010,8 +1009,7 @@ footer {
 /* ===== التجاوب مع الجوال ===== */
 @media (max-width: 768px) {
   .hero {
-    padding: 5rem 1.5rem 2rem;
-    gap: 2rem;
+    padding: 2rem 1.5rem 2rem;
   }
 
   .hero h1 {
@@ -1022,7 +1020,7 @@ footer {
   .hero-visual {
     flex: 1 1 100%; /* يأخذ العرض كاملاً */
     display: block;
-    margin-left: -50px;
+    margin: auto;
   }
 
   .hero-visual {
@@ -1032,7 +1030,7 @@ footer {
   }
 
   .hero-stats {
-    justify-content: center;
+          margin-bottom: 20px;
   }
 } /* ===== SECTIONS GENERAL ===== */
 .section {
@@ -1486,7 +1484,7 @@ input:checked + .slider-toggle:before {
 /* intro-cards  */
 @media (max-width: 768px) {
   .container {
-    padding: 0 75px;
+    padding: 0 25px;
   }
   .guides-grid {
     margin-left: -25px;
@@ -1557,7 +1555,7 @@ input:checked + .slider-toggle:before {
   border-radius: 48px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
   position: relative;
-  margin-bottom: 60px;
+  margin: 60px auto;
 }
 
 /* ---------- العنوان ---------- */
@@ -1591,7 +1589,7 @@ input:checked + .slider-toggle:before {
       position: relative;
       overflow: hidden;
       border-radius: 28px;
-      padding: 0 60px;
+      padding: 0 40px;
   }
 
  .carousel-section  .carousel-track {
@@ -1614,6 +1612,7 @@ input:checked + .slider-toggle:before {
       border-radius: 32px;
       overflow: hidden;
       width: 100%;
+      max-height: 650px;
       max-width: 600px;
       aspect-ratio: 1 / 1;    /* يمكن تغييره إلى 16/9 أو 4/3 حسب الرغبة */
       box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.6);
@@ -1750,7 +1749,7 @@ input:checked + .slider-toggle:before {
 /* ---------- استجابة للجوال ---------- */
 @media (max-width: 768px) {
     .carousel-wrapper {
-        padding: 0 40px;
+        padding: 0 20px;
     }
     .carousel-btn {
         width: 44px;
@@ -1825,11 +1824,12 @@ css/* Contact Section */
 
 .contact-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  gap: 40px;
+  margin-bottom: 60px;
+
 }
 
 .contact-us {
@@ -2003,17 +2003,11 @@ a.info-item {
   box-shadow: 0 8px 25px rgba(153, 69, 255, 0.5);
 }
 @media (max-width: 768px) {
-  .contact-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
+
   .contact-grid {
         display: grid;
         grid-template-columns: repeat(1, minmax(200px, 1fr));
         gap: 20px
-  }
-  .contact-form{
-    margin: auto;
   }
   .booking-section {
     display: flex;
@@ -2022,7 +2016,9 @@ a.info-item {
   }
 
   .hero .container {
-    flex-wrap: wrap;
+    display: flex;
+            justify-content: center;
+        align-items: center;
   }
 
   .nav-logo {
@@ -2820,6 +2816,10 @@ input:checked + .slider-toggle:before {
   }
   .nav-links.active {
     transform: translateX(0);
+  }
+  .hero-image-placeholder {
+    position: relative;
+
   }
 }
 
