@@ -321,7 +321,7 @@ body {
   flex-shrink: 0;
   box-shadow: 0 4px 12px rgba(212, 168, 67, 0.4);
 }
-.im-logo {
+.nav-logo .logo-icon .im-logo {
   width: 36px;
   height: 36px;
   object-fit: contain;
