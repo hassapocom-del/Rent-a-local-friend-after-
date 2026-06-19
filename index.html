@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent A local Friend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="gallery-enhancements.css" />
+    <link rel="stylesheet" href="./master.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- تحميل أيقونات Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Font Awesome للأيقونات -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+  </head>
+  <body>
+    <div id="navbarPlaceholder"></div>
+    <!-- استبدل section.slider-section القديم بهذا -->
+    <!-- <button id="customLoginBtn" class="nav-login-btn">login</button> -->
+
+    <!-- ضع هذا الزر داخل النافبار -->
+    <section class="hero-banner">
+      <div class="slider-images">
+        <img src="./gallary/slid1.jpeg" alt="صورة 1" class="slide-img active" />
+        <img src="./gallary/slid2.jpeg" alt="صورة 2" class="slide-img" />
+      </div>
+
+      <span class="overlay-text">Rent A Local Friend</span>
+      <!-- نقاط التبديل اليدوي -->
+      <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+      </div>
+    </section>
+
+    <section class="hero" id="Home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <a href="https://maps.app.goo.gl/DkQkLGhkDdARjujBA" target="_blank"
+              >🌏 come to visit us</a
+            >
+          </div>
+          <h1>
+            Experience Luxor<br /><span class="gold-text">the Local Way</span>
+          </h1>
+          <p class="hero-subtitle">
+            A tourism platform that connects visitors with local friends in
+            Egypt for a more authentic and flexible experience, while helping
+            tourists avoid exploitation and tourist harassment in a safe and
+            trustworthy environment.
+          </p>
+          <div class="hero-buttons">
+            <a href="#filter" class="btn-primary">Find a Local Companion</a>
+            <a href="./pages/services.html" class="btn-outline"
+              >View All Services</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-placeholder">
+              <span class="placeholder-icon">
+                <video
+                  src="video/short.mp4"
+                  controls
+                  poster="gallary/luxor-experience.jpg"
+                ></video>
+              </span>
+              <span>Experience Luxor The Local Way</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-star"></i></span
+          ><span class="stat-number">4.9</span
+          ><span class="stat-label">evaluations</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-user"></i></span
+          ><span id="companionCount" class="stat-number"></span
+          ><span class="stat-label">local companions</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon"><i class="fa-solid fa-calendar"></i></span
+          ><span class="stat-number">3</span
+          ><span class="stat-label">travels and experiences</span>
+        </div>
+        <div class="stat-item">
+          <div class="rotate"></div>
+          <span class="stat-icon"><i class="fa-solid fa-headset"></i></span>
+          <span class="stat-number">24h</span>
+          <span class="stat-label">support and response</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- سكشن الصور-->
+    <div class="gallery-section">
+      <h2 class="section-title">
+        <i class="fa-solid fa-camera" style="color: var(--gold-light)"></i>
+        Moments From EveryDay Life
+      </h2>
+      <div class="image-grid">
+        <!-- الصورة 1 -->
+        <div class="image-card">
+          <img
+            src="gallary/Street Food Tours.jpeg"
+            alt="صورة الشارع"
+            class="gallery-img"
+          />
+          <div class="image-caption">Street Food Tours</div>
+        </div>
+
+        <!-- الصورة 2 -->
+        <div class="image-card">
+          <img
+            src="gallary/Traditional Workshops.jpeg"
+            alt="صورة الخبز التقليدي"
+            class="gallery-img"
+          />
+          <div class="image-caption">Traditional Workshops</div>
+        </div>
+
+        <!-- الصورة 3 -->
+        <div class="image-card">
+          <img
+            src="gallary/Trying Local Beverages.jpeg"
+            alt="صورة العصائر"
+            class="gallery-img"
+          />
+          <div class="image-caption">Trying Local Beverages</div>
+        </div>
+
+        <!-- الصورة 4 -->
+        <div class="image-card">
+          <img
+            src="gallary//Nile Sunset Trips.jpeg"
+            alt="صورة النيل"
+            class="gallery-img"
+          />
+          <div class="image-caption">Nile Sunset Trips</div>
+        </div>
+      </div>
+    </div>
+    <!-- نافذة عرض الصورة (Lightbox Modal) -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg" />
+    </div>
+    <div class="container">
+      <section id="why-us" class="section why-us">
+        <div class="section-header"><h2>Why Choose Us</h2></div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon"></div>
+            <h3>Verified Egyptians</h3>
+            <p>Safe Experiences</p>
+          </div>
+          <div class="why-card">
+            <div class="why-icon">🏺</div>
+            <h3>Cultural Insights</h3>
+            <p>Deep local knowledge</p>
+          </div>
+          <div class="why-card testimonial-card">
+            <div class="testimonial-quote">
+              “Ahmed was amazing! Safe, knowledgeable, and made our trip
+              perfect.”
+            </div>
+            <p class="testimonial-author">— Sarah, 🇬🇧 UK</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <div id="guidesIntro" class="guides-intro"></div>
+      <div id="globalModal" class="modal-overlay">
+        <div class="modal-container">
+          <div class="modal-header">
+            <h3 id="modalTitle">Book a Guide</h3>
+            <button class="close-modal" id="closeModalBtn">&times;</button>
+          </div>
+          <div id="modalBodyContent"></div>
+        </div>
+      </div>
+    </div>
+    <!-- start customer surveys -->
+    <!-- test -->
+    <div class="container">
+    <section class="carousel-section">
+      <!-- العنوان -->
+      <div class="section-title">
+        <h2>Modern Carousel</h2>
+        <h1>OUR <span>TEAM</span></h1>
+      </div>
+      <!-- الكاروسيل -->
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack"></div>
+        <!-- الأسهم على الجانبين -->
+        <button class="carousel-btn" id="prevBtn" aria-label="previous">‹</button>
+        <button class="carousel-btn" id="nextBtn" aria-label="next">›</button>
+      </div>
+      <!-- النقاط + النصوص -->
+      <div class="carousel-footer">
+        <div class="dots" id="dotsContainer"></div>
+        <div class="member-info" id="memberInfo">
+          <h3>Julia Gimmel</h3>
+          <div class="role">UX Designer</div>
+          <p class="bio">تصمم تجارب مستخدم بديهية وجذابة.</p>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- test -->
+    <!-- end customer surveys -->
+    <!-- الحاوية الرئيسية لنظام التقييم -->
+    <div class="rating-container">
+      <div class="rating-card">
+        <!-- أيقونة الرأس -->
+        <div class="header-icon">
+          <i class="fas fa-star-of-life"></i>
+        </div>
+        <h2>
+          Rate your experience with
+          <span style="color: var(--gold-light)">Local Friend</span>
+        </h2>
+        <div style="text-align: center">
+          <span class="subtitle">Share your feedback to help us improve</span>
+        </div>
+        <!-- نجوم التقييم التفاعلية -->
+        <div class="stars-wrapper" id="starsWrapper">
+          <i class="fas fa-star star active" data-value="1"></i>
+          <i class="fas fa-star star" data-value="2"></i>
+          <i class="fas fa-star star" data-value="3"></i>
+          <i class="fas fa-star star" data-value="4"></i>
+          <i class="fas fa-star star" data-value="5"></i>
+        </div>
+
+        <!-- منطقة عرض رسائل التغذية الراجعة -->
+        <div class="rating-feedback" id="feedbackMsg">
+          <span style="color: #7f8c8d"
+            >✨ Click on stars to rate your Local Friend ✨</span
+          >
+        </div>
+
+        <!-- نموذج إضافة تعليق جديد -->
+        <div class="comment-section">
+          <h4><i class="fas fa-pen-alt"></i> Write your own review</h4>
+          <div class="input-group">
+            <input
+              type="text"
+              id="reviewerName"
+              placeholder="Your name (optional)"
+              maxlength="50"
+            />
+          </div>
+          <div class="input-group">
+            <textarea
+              id="reviewComment"
+              rows="3"
+              placeholder="Share your experience with the Local Friend... (required)"
+              required
+            ></textarea>
+          </div>
+          <button class="submit-review-btn" id="submitReviewBtn">
+            <i class="fas fa-paper-plane"></i> Submit your review
+          </button>
+        </div>
+
+        <!-- عرض متوسط التقييم وعدد المراجعات -->
+        <div class="average-section">
+          <div class="average-box">
+            <span class="average-label">Average rating</span>
+            <span class="average-value" id="avgRating">4.7</span>
+            <span class="stars-static" id="staticStarsPreview">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i>
+            </span>
+          </div>
+          <div>
+            <span class="count-badge" id="reviewCount">128 reviews</span>
+            <button class="reset-btn" id="resetRatingsBtn">
+              <i class="fas fa-undo-alt"></i> Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- رسالة ترحيبية مخصصة -->
+        <div class="message" id="personalMessage">
+          <i class="fas fa-heart" style="color: var(--gold-light)"></i> Thank
+          you for supporting us – every review creates a better experience for
+          Luxor guests
+        </div>
+        <hr />
+        <footer>
+          <i class="fas fa-map-pin"></i> Real reviews from travelers •
+          Transparency & trust
+        </footer>
+      </div>
+    </div>
+    <!-- نافذة منبثقة لعرض قائمة المراجعات -->
+    <div id="reviewsModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3><i class="fas fa-comments"></i> Guest Reviews</h3>
+          <!-- زر الإغلاق مع خاصية onclick مباشرة لضمان العمل -->
+          <button
+            class="close-modal"
+            onclick="
+              document.getElementById('reviewsModal').style.display = 'none'
+            "
+          >
+            &times;
+          </button>
+        </div>
+        <div id="reviewsList"></div>
+      </div>
+    </div>
+    <div id="socialIconsRoot"></div>
+    <footer class="footer" id="footerPlaceholder"></footer>
+    <div id="cookieBanner" class="cookie-consent">
+      <div class="cookie-text">
+        <i class="fas fa-cookie-bite"></i> 🍪 we use cookies to improve your
+        experience.
+      </div>
+      <div class="cookie-buttons">
+        <button id="acceptCookies" class="cookie-btn accept">Accept</button>
+        <button id="rejectCookies" class="cookie-btn reject">Refuse</button>
+      </div>
+    </div>
+    <!-- Login / Register Modal -->
+    <div id="authModal" class="auth-modal">
+      <div class="auth-container">
+        <span class="auth-close" id="closeAuthModalBtn">&times;</span>
+        <div class="auth-tabs">
+          <div class="auth-tab active" data-tab="login">Login</div>
+          <div class="auth-tab" data-tab="signup">Create Account</div>
+        </div>
+        <!-- Login Form -->
+        <div id="loginForm" class="auth-form active-form">
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email"
+            class="input-field"
+          />
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Password"
+            class="input-field"
+          />
+          <div id="loginError" class="auth-error"></div>
+          <button id="doLoginBtn" class="auth-btn">Login</button>
+          <button id="googleMockLogin" class="auth-btn google-btn">
+            <i class="fab fa-google"></i> Login via Google
+          </button>
+        </div>
+        <!-- Sign Up Form -->
+        <div id="signupForm" class="auth-form">
+          <input
+            type="text"
+            id="signupName"
+            placeholder="Full Name"
+            class="input-field"
+          />
+          <input
+            type="email"
+            id="signupEmail"
+            placeholder="Email"
+            class="input-field"
+          />
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Password (at least 6 characters)"
+            class="input-field"
+          />
+          <div id="signupError" class="auth-error"></div>
+          <button id="doSignupBtn" class="auth-btn">Create Account</button>
+          <button id="googleMockSignup" class="auth-btn google-btn">
+            <i class="fab fa-google"></i> Register via Google
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Verification Code Modal -->
+    <div id="verifyModal" class="verify-modal">
+      <div class="verify-card">
+        <h3><i class="fas fa-envelope"></i> Email Verification</h3>
+        <p>A verification code has been sent to your email:</p>
+        <p
+          id="verifyEmailDisplay"
+          style="color: var(--gold-light); font-weight: bold"
+        ></p>
+        <div class="code-inputs">
+          <input type="text" maxlength="1" class="code-digit" id="digit1" />
+          <input type="text" maxlength="1" class="code-digit" id="digit2" />
+          <input type="text" maxlength="1" class="code-digit" id="digit3" />
+          <input type="text" maxlength="1" class="code-digit" id="digit4" />
+          <input type="text" maxlength="1" class="code-digit" id="digit5" />
+          <input type="text" maxlength="1" class="code-digit" id="digit6" />
+        </div>
+        <div id="verifyMessage" class="verify-msg"></div>
+        <button id="verifySubmitBtn" class="auth-btn" style="width: 100%">
+          Verify & Activate Account
+        </button>
+        <button id="resendCodeBtn" class="resend-link">
+          <i class="fas fa-redo-alt"></i> Resend Code
+        </button>
+        <div style="margin-top: 15px">
+          <button
+            id="cancelVerifyBtn"
+            style="background: none; border: none; color: #aaa; cursor: pointer"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="./introguides.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

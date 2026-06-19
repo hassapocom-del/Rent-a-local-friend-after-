@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Luxor Local Guides | Hourly Booking</title>
+    <link rel="stylesheet" href="../master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="hero">
+        <h1><i class="fas fa-spa"></i> Luxor Local Friends
+        </h1>
+        <p>Authentic journeys · Real connections · Storytelling & heritage</p>
+        <div class="badge-location"><i class="fas fa-map-pin"></i> Luxor, Egypt – West Bank & East Bank</div>
+    </div>
+        <div id="navbarPlaceholder"></div>
+    <!-- Filter Card -->
+    <div class="filter-card">
+        <div class="filter-grid">
+            <div class="filter-group">
+                <label><i class="fas fa-search"></i> Search</label>
+                <input type="text" id="searchInput" placeholder="Name, hobby or location...">
+            </div>
+            <div class="filter-group">
+                <label><i class="fas fa-map-marker-alt"></i> Location</label>
+                <select id="locationSelect"><option value="">All locations</option></select>
+            </div>
+            <div class="filter-group">
+                <label><i class="fas fa-dollar-sign"></i> Price range ($/hr)</label>
+                <div class="dual-range">
+                    <input type="range" id="priceMin" min="0" max="15" step="0.5" value="0">
+                    <input type="range" id="priceMax" min="0" max="15" step="0.5" value="15">
+                </div>
+                <div class="range-labels"><span id="minPriceLabel">$0</span><span id="maxPriceLabel">$15</span></div>
+            </div>
+            <div class="filter-group">
+                <label><i class="fas fa-star"></i> Min Rating</label>
+                <div class="rating-slider-container">
+                    <input type="range" id="ratingFilter" min="4.5" max="5.0" step="0.1" value="4.5">
+                    <span id="ratingValue" class="rating-value">4.5</span>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label><i class="fas fa-tags"></i> Category</label>
+                <div class="category-wrap" id="categoryGroup">
+                    <button data-cat="all" class="category-btn active">All</button>
+                    <button data-cat="budget" class="category-btn">Budget</button>
+                    <button data-cat="standard" class="category-btn">Standard</button>
+                    <button data-cat="luxury" class="category-btn">Luxury</button>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label><i class="fas fa-shield-alt"></i> Verified only</label>
+                <div class="toggle-row"><label class="switch"><input type="checkbox" id="verifiedToggle"><span class="slider-toggle"></span></label></div>
+            </div>
+            <div class="filter-group"><button id="resetFiltersBtn" class="reset-btn"><i class="fas fa-undo-alt"></i> Reset</button></div>
+        </div>
+    </div>
+
+    <!-- Guides Grid -->
+    <div id="guidesGrid" class="guides-grid"></div>
+</div>
+
+<!-- Global Modal (Booking & Payment) -->
+<div id="globalModal" class="modal-overlay">
+    <div class="modal-container">
+        <div class="modal-header"><h3 id="modalTitle">Book a Guide</h3><button class="close-modal" id="closeModalBtn">&times;</button></div>
+        <div id="modalBodyContent"></div>
+    </div>
+</div>
+    <div id="socialIconsRoot">
+    </div>
+    <footer class="footer" id="footerPlaceholder"></footer>
+<script src="../script.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>

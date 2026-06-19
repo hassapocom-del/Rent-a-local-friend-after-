@@ -1,0 +1,48 @@
+[
+       {
+        "id": 2,
+        "name": "Ahmed Al-Moati",
+        "degree": "Bachelor of Tourism and Travel Technology",
+        "location": "Luxor - Karnak & East Bank",
+        "hobbies": [
+            "Communication with international visitors",
+            "Guiding tourists in local Egyptian areas",
+            "Creating authentic local experiences",
+            "Storytelling and cultural explanation",
+            "Basic tour planning and organization",
+            "Social interaction and hospitality skills",
+            "Knowledge of local culture and traditions",
+            "Photography and visual storytelling",
+            "Capturing local life and cultural moments",
+            "Problem-solving in real travel situations"
+        ],
+        "languages": "English, German",
+        "price": "30",
+        "priceDuration": "3 hours",
+        "image": "gallary/Ahmed.jpg",
+        "evaluation": "4.9",
+        "verified": true
+    },
+    {
+        "id": 5,
+        "name": "Al Shaimaa Ahmed",
+        "degree": "Bachelor of Tourism and Travel Technology",
+        "location": "Luxor - Theban Tombs & Community areas",
+        "hobbies": [
+            "Organizing events and teamwork activities",
+            "Cultural exchange and meeting new people",
+            "Volunteering and community activities",
+            "Tourism and travel exploration",
+            "Public relations and social communication",
+            "Leadership and youth development activities",
+            "Learning new skills and self-development",
+            "Participating in social and university events"
+        ],
+        "languages": "English, French",
+        "price": "25",
+        "priceDuration": "3 hours",
+        "image": "gallary/shaimaa.jpg",
+        "evaluation": "4.9",
+        "verified": true
+    }
+]

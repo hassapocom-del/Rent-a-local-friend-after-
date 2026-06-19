@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حجز مرشد - Rent A Local Friend</title>
+    <link rel="stylesheet" href="../master.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+          <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <body>
+    <div id="navbarPlaceholder"></div>
+    <div class="container">
+  <div class="container booking-section">
+    <div id="bookingModal" class="modal-overlay active">
+      <div class="modal-content">
+        <h3>Booking Details</h3>
+        <div class="booking-details">
+          <p><strong>Guide:</strong> <span id="modalGuideName"></span></p>
+          <p>
+            <strong>Location:</strong> <span id="modalGuideLocation"></span>
+          </p>
+          <p>
+            <strong>Price per hour/person:</strong>
+            <span id="modalGuidePrice"></span> $
+          </p>
+        </div>
+        <div class="booking-form">
+          <div class="form-group">
+            <label>Date:</label>
+            <input type="date" id="bookingDate" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Hours:</label>
+              <input type="number" id="bookingHours" min="1" value="1" />
+            </div>
+            <div class="form-group">
+              <label>Persons:</label>
+              <input type="number" id="bookingPersons" min="1" value="1" />
+            </div>
+          </div>
+          <div class="total-price">
+            Total: <span id="totalPrice">0</span> $
+          </div>
+          <button id="proceedToPayment" class="btn-primary">
+            Proceed to Payment
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment-container">
+      <h2>Payment Information</h2>
+      <form id="paymentForm">
+        <div class="form-group">
+          <label>Cardholder Name</label>
+          <input type="text" id="cardName" placeholder="John Doe" />
+          <span class="error-message" id="cardNameError"></span>
+        </div>
+        <div class="form-group">
+          <label>Card Number</label>
+          <input
+            type="text"
+            id="cardNumber"
+            placeholder="1234 5678 9012 3456"
+          />
+          <span class="error-message" id="cardNumberError"></span>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Expiry Date (MM/YY)</label>
+            <input type="text" id="expiry" placeholder="12/28" />
+            <span class="error-message" id="expiryError"></span>
+          </div>
+          <div class="form-group">
+            <label>CVV</label>
+            <input type="text" id="cvv" placeholder="123" />
+            <span class="error-message" id="cvvError"></span>
+          </div>
+        </div>
+        <button type="submit" class="pay-btn">Confirm Payment</button>
+      </form>
+      <div id="successMessage" class="success-message">
+        ✓ Payment successful! Thank you.
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="socialIconsRoot"></div>
+    <footer class="footer" id="footerPlaceholder"></footer>
+    <script src="../main.js"></script>
+  </body>
+</html>

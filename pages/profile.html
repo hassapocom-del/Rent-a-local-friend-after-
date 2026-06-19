@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Profile | Luxor Local Guides</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../master.css">
+            <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .profile-page {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 2rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: fadeInUp 0.6s ease;
+        }
+        .profile-header {
+            background: linear-gradient(135deg, #f8ede1, #fefaf5);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid #f0e1ce;
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e7bc87;
+            margin-bottom: 1rem;
+        }
+        .profile-header h1 {
+            font-size: 2rem;
+            color: #3f2b19;
+        }
+        .profile-content {
+            padding: 2rem;
+        }
+        .back-home {
+            display: inline-block;
+            margin: 1rem 2rem;
+            background: #efe2d4;
+            padding: 8px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #a56e3e;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .back-home:hover {
+            background: #e7d5c2;
+            transform: scale(0.97);
+        }
+        .book-now-btn {
+            display: block;
+            width: 80%;
+            margin: 2rem auto 1rem;
+            background: #cb7b3c;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .book-now-btn:hover {
+            background: #b56228;
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div id="navbarPlaceholder"></div>
+    <a href="companions.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to all guides</a>
+    <div class="profile-page" id="profileContainer">
+        <div class="profile-header" id="profileHeader"></div>
+        <div class="profile-content" id="profileContent"></div>
+    </div>
+    <footer class="footer" id="footerPlaceholder"></footer>
+    <div class="container">
+     
+      <div id="globalModal" class="modal-overlay">
+          <div class="modal-container">
+              <div class="modal-header"><h3 id="modalTitle">Book a Guide</h3><button class="close-modal" id="closeModalBtn">&times;</button></div>
+              <div id="modalBodyContent"></div>
+          </div>
+      </div>
+    </div>
+<div id="socialIconsRoot"></div>
+<script src="../main.js"></script>
+<script src="../profile.js"></script>
+</body>
+</html>
