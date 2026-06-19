@@ -290,6 +290,7 @@ body {
   max-width: 1400px;
 }
 
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -305,7 +306,7 @@ body {
   white-space: nowrap;
 }
 
-.nav-logo:hover {
+.nav-logo:hover{
   color: var(--gold);
 }
 
