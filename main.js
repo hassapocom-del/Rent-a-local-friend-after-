@@ -196,8 +196,7 @@ function getNavbarMarkup() {
   <nav class="navbar" id="navbar">
   <div class="container" id="navbarContainer">
   <div class="nav-container">
-        <a href="${logoLink}" 
-        lass="nav-logo">
+        <a href="${logoLink}" class="nav-logo">
           <span class="logo-icon">
             <img class="im-logo" src="${prefix}gallary/remove.photos-removed-background.png" alt="" />
           </span>
